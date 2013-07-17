@@ -82,7 +82,7 @@
           region = $this.closest(self.settings.region_selector),
           content = $this.siblings(self.settings.content_selector),
           parent = region.parent(),
-          settings = $.extend({}, self.settings, self.data_options(parent)),
+          settings = $.extend({}, self.settings), self.data_options(parent)),
           prev_active_section = parent
             .children(self.settings.active_region_selector);
 
